@@ -1,9 +1,9 @@
 self.addEventListener('install', function(e) {
   e.waitUntil(
-    caches.open('horario-612').then(function(cache) {
+    caches.open('horario-612-v4').then(function(cache) { // Aquí cambiamos el nombre de la caché a 'horario-612-v4'
       return cache.addAll([
-        '/',
-        '/horario'
+        './',
+        '/Horario'
       ]);
     })
   );
